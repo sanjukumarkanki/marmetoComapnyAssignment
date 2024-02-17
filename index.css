@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-container {
+    background-color: #fff;
+    min-height: 100vh;
+    background-size: cover;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small-devices-nav-items-container {
+    display: flex;
+    align-content: center;
+    column-gap: 20px;
+}
+
+@media screen and (min-width : 768px) {
+    .small-devices-nav-items-container {
+        display: none;
+    }
+}
+
+.medium-nav-items-container,
+.medium-nav-add-cart-count-container {
+    display: none;
+}
+
+@media screen and (min-width : 768px) {
+
+    .medium-nav-items-container,
+    .medium-nav-add-cart-count-container {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+}
+
+.medium-nav-items-container li {
+    list-style-type: none;
+}
+
+main {
+    padding: 10px;
+    width: 100%;
+
+}
+
+.main-banner-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+
+}
+
+@media screen and (min-width : 768px) {
+    .main-banner-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.main-first-container-search {
+    display: none;
+}
+
+
+.nav-items-down {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 10px;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav-items-down div:hover {
+    color: red;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+}
+
+.nav-items-down2 {
+    display: none;
+}
+
+
+@media screen and (min-width : 768px) {
+    .main-first-container-search {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+}
+
+.input-container {
+    background-color: white;
+    border: lightblue 2px solid;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 10px;
+    width: 48%;
+    border-radius: 5px;
+}
+
+.input-container input {
+    width: 90%;
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+
+.instagram-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 48%;
+}
+
+
+.instagram-container hr {
+    color: red;
+    border: solid 1px gray;
+    flex-grow: 1;
+}
+
+
+.left-side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.left-side-container h1 {
+    font-size: 1rem;
+}
+
+.left-side-container div {
+    width: 100%;
+}
+
+.left-side-container button:first-child {
+    background-color: black;
+    height: 48px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 40%;
+    color: white;
+
+    font-size: 20px;
+}
+
+.left-side-container button:last-child {
+    background-color: #fff;
+    height: 48px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 45%;
+    color: black;
+    font-size: 20px;
+}
+
+
+.right-side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.right-side-container div {
+    width: 70%;
+    background-color: yellow;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+
+.right-side-container div img {
+    width: 100%;
+}
+
+
+
+.main-banner-container2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.main-banner-container2 div {
+    width: 100%;
+}
+
+.main-banner-container2 div img {
+    width: 100%;
+}
+
+@media screen and (min-width : 768px) {
+    .main-banner-container2 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width : 957px) {
+    .main-banner-container2 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+.product-3-container {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
